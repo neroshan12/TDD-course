@@ -1,11 +1,14 @@
 class Game {
-  constructor(player1, player2) {
-    this.player1 = player1;
-    this.player2 = player2;
+  constructor(score) {
+    this.score = score
   }
 
-  score() {
-    return 4;
+  totalScore() {
+    return 0;
+  }
+
+  scoringRules() {
+    return this.score === 0 ? "Love all" : null
   }
 }
 
